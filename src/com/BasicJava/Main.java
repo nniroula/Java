@@ -53,14 +53,53 @@ public class Main {
         // Check if they are not the right data types(eg, if integer input is not int)
         Scanner input = new Scanner(System.in);
 
+        /*
         // ask user to input an integer
         System.out.print("Enter an integer: ");
         // store it in a variable
         int number1 = input.nextInt();
         // Display it back to a user
         System.out.println("You entered " + number1);
+        */
 
-        
+        /*
+        // get some string input
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();
+        System.out.println("Your beautiful name is " + name);
+        */
 
+        /*
+        // double input
+        System.out.print("Enter a decimal number with fractional part: ");
+        double decimalPointNumber = input.nextDouble();
+        System.out.println("You entered " + decimalPointNumber);
+        */
+
+        /*
+        // floating point number
+        System.out.print("Enter a floating point number: ");
+        float number3 = input.nextFloat();
+        System.out.println("You entered " + number3);
+        */
+
+        // next() method,
+        // switch case statement
+        System.out.print("enter your name: ");
+        String firstName = input.nextLine();
+       // System.out.print("You entered " + name2);
+
+        // Switch case
+        switch(firstName){
+            case "nabin":
+                System.out.printf("You entered %s ", "nabin");
+                break;
+            case "prabha":
+                System.out.printf("You entered %s ", "prabha");
+                break;
+            default:
+                System.out.printf("You entered %s but is not found", firstName);
+                break;
+        }
     }
 }

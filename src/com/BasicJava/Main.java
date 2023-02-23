@@ -1,20 +1,12 @@
 package com.BasicJava;
 
-/*
-public class Main {
-
-    public static void main(String[] args) {
-	// write your code here
-        System.out.println("Hello Developers out there");
-    }
-}
-*/
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        System.out.println("Hello Developers out there");
+        System.out.println("Hello Developers, Nabin here:- ");
 
         //  variables
         int age;
@@ -54,7 +46,21 @@ public class Main {
         int num9 = 9;
         int num10 = num8/num9; // will be int value
         double num11 = num8/(double) num9; // will be converted to double
-        System.out.println(num11);
+        // System.out.println(num11);
+
+        // User Input, import java.util.Scanner;
+        // get an integer, float, string, double as input, and display them.
+        // Check if they are not the right data types(eg, if integer input is not int)
+        Scanner input = new Scanner(System.in);
+
+        // ask user to input an integer
+        System.out.print("Enter an integer: ");
+        // store it in a variable
+        int number1 = input.nextInt();
+        // Display it back to a user
+        System.out.println("You entered " + number1);
+
+        
 
     }
 }

@@ -1,5 +1,6 @@
 package com.BasicJava;
 
+import javax.xml.transform.stream.StreamSource;
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -126,5 +127,50 @@ public class Main {
             System.out.println(j);
         }
         */
-    }
-}
+
+        /*
+        // Multi-Dimensional array, use Arrays.deepToString(yourArr) method, not Arrays.toString()
+
+        // example 1
+        int nums[][] = new int[2][3]; // 2 rows 3 columns
+        // add numbers to it
+        nums[0][0] = 1;
+        System.out.println(Arrays.deepToString(nums)); // OR
+
+        // nested for loop to print the elements, formatting of where print system go is key here
+        for(int i = 0; i< nums.length; i++){  // array length
+            for(int j = 0; j< nums[i].length; j++){  // row length
+                System.out.print(nums[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+        // example 2, arrays inside array do not have to be of same length
+        int [][] twoDArray = {
+                        {1, 2},
+                        {3, 4, 5}
+                    };
+        for(int row = 0; row < twoDArray.length; row++){
+            for(int col = 0; col < twoDArray[row].length; col++){
+                System.out.print(twoDArray[row][col] + "\t");  // print()
+            }
+            System.out.println(); // this is for cleaner formatting
+        }
+
+        System.out.println("****************************");
+
+        // enhanced for loop approach for the above nested loop
+        for (int[] array : twoDArray) {  // array in 2D array
+            for (int row : array) {  // row in array
+                System.out.print(row + "\t");  // print() for cleaner formatting of 2D array
+
+            // Comment everything except first for loop, and run this command,
+            // it prints 2 different arrays
+                // System.out.println(Arrays.toString(array));
+           }
+            System.out.println(); // this is for cleaner formatting of 2D array
+        }
+        */
+        
+    } // end of main method
+} // end of class

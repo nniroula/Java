@@ -1,12 +1,15 @@
 package com.BasicJava;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
         System.out.println("Hello Developers, Nabin here:- ");
+
+        /* STEP 1 */
 
         //  variables
         int age;
@@ -83,13 +86,14 @@ public class Main {
         System.out.println("You entered " + number3);
         */
 
+        /*
         // next() method,
         // switch case statement
         System.out.print("enter your name: ");
         String firstName = input.nextLine();
        // System.out.print("You entered " + name2);
 
-        // Switch case
+        // Switch case, firstName is the variable that holds user input, nabin & prabha are the values of firstName
         switch(firstName){
             case "nabin":
                 System.out.printf("You entered %s ", "nabin");
@@ -101,5 +105,26 @@ public class Main {
                 System.out.printf("You entered %s but is not found", firstName);
                 break;
         }
+        */
+        /*
+        // Arrays in java, if array is empty, it puts default values
+        int [] numbers = new int[5];
+        // Initialize the array
+        int []numbers2 = {1, 2, 4, 6, 8};
+        numbers[0] = 1;
+        //System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(numbers2));
+
+        for(int i = 0; i < numbers2.length; i++){
+           // System.out.println(numbers[i]);
+            System.out.println(numbers2[i]);
+        }
+
+        // enhanced for loop
+        for (int j : numbers2) {
+            // System.out.println(numbers[i]);
+            System.out.println(j);
+        }
+        */
     }
 }

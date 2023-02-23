@@ -5,10 +5,21 @@ Create a class, instantiate it inside main function of public and add data to th
  */
 
 class Language{
+	// variables
 	String name;
 	String backendFrameWork;
 	String packageManger;
-}
+
+	// methods -> methods are called subroutines in java as well
+	// returnType methodName(parameter1, parameter2, ..){}
+	void displayName(){
+		System.out.println(name);
+	}
+	String displayFrameWork() {
+		return this.backendFrameWork;
+	}
+
+} // end of Language class
 
 public class OOPConcepts {
 	public static void main(String[] args){
@@ -34,6 +45,12 @@ public class OOPConcepts {
 		System.out.println();
 		System.out.printf("Package Manger: %s", codingLanguage1.packageManger);
 
+		// call method on this object
+		System.out.println();
+		System.out.println();
+		System.out.println("Displaying language name .....");
+		codingLanguage1.displayName();
+
 		// add space between two objects for display purpose
 		System.out.println();
 		System.out.println();
@@ -48,5 +65,11 @@ public class OOPConcepts {
 		System.out.printf("Backend framework: %s", codingLanguage2.backendFrameWork);
 		System.out.println();
 		System.out.printf("Package Manager: %s", codingLanguage2.packageManger);
-	}
-}
+
+		// call method on this object
+		System.out.println();
+		System.out.println();
+		System.out.printf("Framework of language 2 is %s", codingLanguage2.displayFrameWork());
+
+	} // end of main method
+} // end of OOPConcepts class
